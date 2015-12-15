@@ -85,7 +85,7 @@ hr {
 .well {
     background-color: #EDEDED;
     margin-bottom: 0px;
-}
+    }
 
 input, textarea, select, .uneditable-input {
     border: 1px solid #d2d2d2;
@@ -96,4 +96,15 @@ input, textarea, select, .uneditable-input {
     
 input {
     height: auto !important;
+    }
+    
+span.picture {
+    margin-top: 10px;
+        input {
+            border: 0;
+        }
+    }
+
+.show_recipe {
+    margin: 10px 10px 10px 10px;
     }
