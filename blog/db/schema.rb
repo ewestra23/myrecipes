@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151214183951) do
+ActiveRecord::Schema.define(version: 20151215143751) do
 
   create_table "chefs", force: :cascade do |t|
     t.string   "chefname"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.boolean  "like"
+    t.integer  "chef_id"
+    t.integer  "recipe_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
